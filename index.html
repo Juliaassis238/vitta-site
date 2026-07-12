@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F6F3EC;
-    --bg-soft:#EFEAE0;
-    --dark:#16241F;
-    --dark-2:#0E1713;
-    --gold:#B08D3F;
-    --sage:#7C8F7B;
-    --text:#1F2A24;
-    --line:rgba(31,42,36,0.14);
+    --bg:#FAFAF8;
+    --bg-soft:#F5F3F0;
+    --dark:#1A1A1A;
+    --dark-2:#0F0F0F;
+    --gold:#D4AF37;
+    --sage:#5A6B63;
+    --text:#2C2C2C;
+    --line:rgba(44,44,44,0.12);
     --ease:cubic-bezier(.16,.84,.44,1);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -39,13 +39,14 @@
   }
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;
-    font-size:12px;
-    letter-spacing:0.18em;
+    font-size:13px;
+    letter-spacing:0.2em;
     text-transform:uppercase;
     color:var(--gold);
     display:flex;
     align-items:center;
     gap:10px;
+    font-weight:600;
   }
   .eyebrow::before{
     content:'';
@@ -119,16 +120,16 @@
   .hero .eyebrow{color:var(--gold);margin-bottom:22px;text-shadow:0 1px 3px rgba(0,0,0,0.2);}
   .hero h1{
     font-size:clamp(42px,7vw,96px);
-    font-weight:500;
+    font-weight:600;
     color:#fff;
-    text-shadow:0 2px 10px rgba(0,0,0,0.3);
+    text-shadow:0 3px 15px rgba(0,0,0,0.4);
     letter-spacing:-0.02em;
   }
-  .hero h1 em{font-style:italic;font-weight:400;color:var(--gold);}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--gold);}
   .hero-sub{
-    max-width:520px;margin-top:26px;font-size:18px;line-height:1.75;
-    color:#fff;font-weight:400;
-    text-shadow:0 1px 5px rgba(0,0,0,0.2);
+    max-width:520px;margin-top:26px;font-size:19px;line-height:1.8;
+    color:#fff;font-weight:500;
+    text-shadow:0 2px 8px rgba(0,0,0,0.3);
   }
   .hero-line{
     position:relative;z-index:2;
@@ -170,9 +171,9 @@
   .philosophy-media{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:2px;}
   .philosophy-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.6s var(--ease);}
   .philosophy-media.in img{transform:scale(1);}
-  .philosophy-text h2{font-size:clamp(32px,3.6vw,52px);margin:22px 0 28px;}
+  .philosophy-text h2{font-size:clamp(32px,3.6vw,52px);margin:22px 0 28px;font-weight:600;color:var(--dark);}
   .philosophy-text p{
-    font-size:18px;line-height:1.9;color:rgba(31,42,36,0.8);font-weight:400;
+    font-size:18px;line-height:1.95;color:rgba(44,44,44,0.9);font-weight:500;
     max-width:540px;
   }
   .philosophy-text p + p{margin-top:18px;}
@@ -193,7 +194,7 @@
   .services{background:var(--dark);color:#F6F3EC;}
   .services .eyebrow{color:var(--gold);}
   .services .divider-rule{background:rgba(246,243,236,0.14);}
-  .services h2{font-size:clamp(32px,3.6vw,52px);max-width:640px;margin-bottom:70px;}
+  .services h2{font-size:clamp(32px,3.6vw,52px);max-width:640px;margin-bottom:70px;font-weight:600;color:#fff;}
   .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(246,243,236,0.14);}
   .service-card{
     background:var(--dark);padding:44px 30px;min-height:320px;
@@ -202,15 +203,15 @@
   }
   .service-card:hover{background:#1C2D26;}
   .service-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);}
-  .service-card h3{font-size:23px;font-weight:400;margin:40px 0 14px;}
-  .service-card p{font-size:15px;line-height:1.8;color:rgba(246,243,236,0.75);font-weight:400;}
+  .service-card h3{font-size:23px;font-weight:600;margin:40px 0 14px;color:#fff;}
+  .service-card p{font-size:15px;line-height:1.85;color:rgba(250,250,248,0.9);font-weight:500;}
 
   /* ---------- process ---------- */
   .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:20px;}
   .process-step{border-top:1px solid var(--line);padding-top:26px;}
   .process-step .service-num{color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:12px;}
   .process-step h3{font-size:20px;font-weight:500;margin:16px 0 10px;}
-  .process-step p{font-size:15px;line-height:1.8;color:rgba(31,42,36,0.75);font-weight:400;}
+  .process-step p{font-size:15px;line-height:1.85;color:rgba(44,44,44,0.9);font-weight:500;}
 
   /* ---------- team ---------- */
   .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:20px;}
@@ -227,8 +228,8 @@
   .quote-slide{display:none;}
   .quote-slide.active{display:block;}
   blockquote{
-    font-family:'Fraunces',serif;font-style:italic;font-weight:500;
-    font-size:clamp(26px,3.2vw,42px);line-height:1.6;max-width:900px;color:rgba(31,42,36,0.9);
+    font-family:'Fraunces',serif;font-style:italic;font-weight:600;
+    font-size:clamp(26px,3.2vw,42px);line-height:1.65;max-width:900px;color:rgba(44,44,44,1);
   }
   .quote-meta{margin-top:30px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;color:var(--sage);text-transform:uppercase;}
   .quote-dots{display:flex;gap:10px;margin-top:50px;}
@@ -247,7 +248,7 @@
   /* ---------- contact ---------- */
   .contact{background:var(--dark);color:#F6F3EC;display:grid;grid-template-columns:1fr 1fr;gap:100px;}
   .contact .eyebrow{color:var(--gold);}
-  .contact h2{font-size:clamp(32px,3.6vw,50px);margin:22px 0 30px;}
+  .contact h2{font-size:clamp(32px,3.6vw,50px);margin:22px 0 30px;font-weight:600;color:#fff;}
   .hours{margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:13px;}
   .hours-row{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid rgba(246,243,236,0.14);color:rgba(246,243,236,0.75);}
   .hours-row:last-child{border-bottom:1px solid rgba(246,243,236,0.14);}
@@ -443,7 +444,7 @@
         <img src="/manus-storage/vitta-mascote-owl_c7a733ba.png" alt="Mascote VITTA" style="width:100%;height:100%;object-fit:contain;">
       </div>
     </div>
-    <p data-reveal style="--d:.3s;font-size:18px;line-height:1.9;color:rgba(31,42,36,0.8);font-weight:400;max-width:560px;margin:40px auto 0;">Representando a sabedoria, a vigilância e o cuidado atencioso que oferecemos a cada paciente. Nossa mascote é o símbolo vivo do compromisso da VITTA com a excelência veterinária.</p>
+    <p data-reveal style="--d:.3s;font-size:18px;line-height:1.95;color:rgba(44,44,44,0.95);font-weight:500;max-width:560px;margin:40px auto 0;">Representando a sabedoria, a vigilância e o cuidado atencioso que oferecemos a cada paciente. Nossa mascote é o símbolo vivo do compromisso da VITTA com a excelência veterinária.</p>
   </div>
 </section>
 
