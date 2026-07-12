@@ -274,7 +274,8 @@
     background:var(--dark-2);color:rgba(252,251,249,0.5);
     font-size:12px;letter-spacing:0.04em;
   }
-  footer .brand{color:rgba(252,251,249,0.9);}
+  footer .brand{color:rgba(252,251,249,0.9);display:flex;align-items:center;gap:12px;}
+  footer .brand img{height:24px;width:auto;}
 
   @media (max-width:960px){
     .philosophy,.contact{grid-template-columns:1fr;gap:50px;}
@@ -290,7 +291,10 @@
 <body>
 
 <header>
-  <div class="brand">VITTA <span>·</span> Veterinária</div>
+  <div class="brand" style="display:flex;align-items:center;gap:12px;">
+    <img src="/manus-storage/vitta-logo_a02953f8.png" alt="VITTA Logo" style="height:32px;width:auto;">
+    <span>VITTA <span>·</span> Veterinária</span>
+  </div>
   <nav>
     <ul>
       <li><a href="#filosofia">Clínica</a></li>
@@ -470,7 +474,10 @@
 <footer>
   <div style="display:flex;flex-direction:column;gap:20px;width:100%;">
     <div style="display:flex;justify-content:space-between;align-items:center;width:100%;">
-      <span class="brand">VITTA Veterinária</span>
+      <div class="brand">
+        <img src="/manus-storage/vitta-logo_a02953f8.png" alt="VITTA Logo">
+        <span>VITTA Veterinária</span>
+      </div>
       <span>© 2026 — Todos os direitos reservados</span>
     </div>
     <div style="text-align:center;font-size:11px;color:rgba(246,243,236,0.4);letter-spacing:0.04em;">Criado por Júlia Assis / Word Tecnologia</div>
