@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FAFAF8;
-    --bg-soft:#F5F3F0;
-    --dark:#1A1A1A;
-    --dark-2:#0F0F0F;
-    --gold:#D4AF37;
-    --sage:#5A6B63;
-    --text:#2C2C2C;
-    --line:rgba(44,44,44,0.12);
+    --bg:#FCFBF9;
+    --bg-soft:#F8F6F3;
+    --dark:#0D1A16;
+    --dark-2:#050B09;
+    --gold:#C9A961;
+    --sage:#6B7B73;
+    --text:#1F2622;
+    --line:rgba(31,38,34,0.1);
     --ease:cubic-bezier(.16,.84,.44,1);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -112,8 +112,8 @@
   .hero-bg{
     position:absolute;inset:0;
     background:
-      linear-gradient(180deg, rgba(14,23,19,0.4) 0%, rgba(14,23,19,0.65) 50%, rgba(14,23,19,0.95) 100%),
-      url('/manus-storage/vitta-hero-capa_6402d3e1.png') center/cover no-repeat;
+      linear-gradient(180deg, rgba(13,26,22,0.35) 0%, rgba(13,26,22,0.55) 50%, rgba(5,11,9,0.85) 100%),
+      url('/manus-storage/vitta-hero-capa-new_e3405354.png') center/cover no-repeat;
     background-color:var(--dark-2);
   }
   .hero-content{position:relative;z-index:2;color:#fff;max-width:900px;}
@@ -201,7 +201,7 @@
     display:flex;flex-direction:column;justify-content:space-between;
     transition:background .5s var(--ease);
   }
-  .service-card:hover{background:#1C2D26;}
+  .service-card:hover{background:#0F1A16;}
   .service-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);}
   .service-card h3{font-size:23px;font-weight:600;margin:40px 0 14px;color:#fff;}
   .service-card p{font-size:15px;line-height:1.85;color:rgba(250,250,248,0.9);font-weight:500;}
@@ -250,16 +250,16 @@
   .contact .eyebrow{color:var(--gold);}
   .contact h2{font-size:clamp(32px,3.6vw,50px);margin:22px 0 30px;font-weight:600;color:#fff;}
   .hours{margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:13px;}
-  .hours-row{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid rgba(246,243,236,0.14);color:rgba(246,243,236,0.75);}
-  .hours-row:last-child{border-bottom:1px solid rgba(246,243,236,0.14);}
+  .hours-row{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid rgba(252,251,249,0.12);color:rgba(252,251,249,0.85);}
+  .hours-row:last-child{border-bottom:1px solid rgba(252,251,249,0.12);}
   form{display:flex;flex-direction:column;gap:22px;}
   form input,form textarea{
-    background:transparent;border:none;border-bottom:1px solid rgba(246,243,236,0.28);
+    background:transparent;border:none;border-bottom:1px solid rgba(252,251,249,0.25);
     padding:14px 2px;color:#fff;font-family:'Manrope',sans-serif;font-size:15px;
     outline:none;transition:border-color .4s var(--ease);
   }
   form input:focus,form textarea:focus{border-color:var(--gold);}
-  form ::placeholder{color:rgba(246,243,236,0.4);}
+  form ::placeholder{color:rgba(252,251,249,0.5);}
   .submit-btn{
     margin-top:14px;align-self:flex-start;
     background:var(--gold);color:var(--dark-2);border:none;
@@ -271,10 +271,10 @@
 
   footer{
     padding:50px 6vw;display:flex;justify-content:space-between;align-items:center;
-    background:var(--dark-2);color:rgba(246,243,236,0.5);
+    background:var(--dark-2);color:rgba(252,251,249,0.5);
     font-size:12px;letter-spacing:0.04em;
   }
-  footer .brand{color:rgba(246,243,236,0.85);}
+  footer .brand{color:rgba(252,251,249,0.9);}
 
   @media (max-width:960px){
     .philosophy,.contact{grid-template-columns:1fr;gap:50px;}
